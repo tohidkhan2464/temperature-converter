@@ -172,9 +172,9 @@ button {
 }
 
 .output-span {
-  outline: 2px solid black;
-  border: none;
-  caret-color: black;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 2px 20px;
 }
 
 @media (max-width: 1680px) {

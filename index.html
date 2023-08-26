@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temperature Convertor</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Temperature Convertor</h2>
+
+    <form class="contact-form">
+
+      <div>
+        <p>
+          Type a value in the Fahrenheit field to convert it the value to Celsius:
+        </p>
+        <p>
+          <label style="padding-right: 20px"> Fahrenheit </label>
+          <input id="inputFahrenheit" type="number" step="0.01" placeholder=" Fahrenheit" />
+        </p>
+        <p> Celcius : <span class="span-output" id="outputCelcius"></span></p>
+
+        <div class="button-div">
+          <button type="button" onclick="temperatureConverter1()">Submit</button>
+          <button class="reset-button" type="reset" onclick="reseting1()">Reset</button>
+        </div>
+
+      </div>
+
+
+      <div>
+        <p>
+          Type a value in the Celsius field to convert it the value to Kelvin:
+        </p>
+        <p>
+          <label style="padding-right: 20px"> Celsius </label>
+          <input id="inputCelsius" type="number" step="0.01" placeholder=" Celsius" />
+        </p>
+        <p>Kelvin : <span class="span-output" id="outputKelvin"></span></p>
+
+        <div class="button-div">
+          <button type="button" onclick="temperatureConverter2()">Submit</button>
+          <button class="reset-button" type="reset" onclick="reseting2()">Reset</button>
+        </div>
+
+      </div>
+
+
+      <div>
+        <p>
+          Type a value in the Kelvin field to convert it the value to Fahrenheit:
+        </p>
+        <p>
+          <label style="padding: 0 15px"> Kelvin </label>
+          <input id="inputKelvin" type="number" step="0.01" placeholder=" Kelvin " />
+        </p>
+        <p>Fahrenheit : <span class="span-output" id="outputFahrenheit"></span></p>
+
+        <div class="button-div">
+          <button type="button" onclick="temperatureConverter3()">Submit</button>
+          <button class="reset-button" type="reset" onclick="reseting3()">Reset</button>
+        </div>
+
+      </div>
+
+    </form>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
